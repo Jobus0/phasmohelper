@@ -3,13 +3,13 @@ include ../mixins/evidence.pug
 h3(wiki="https://phasmophobia.fandom.com/wiki/Thaye") Thaye
     img(src="ghost-icons/thaye.png")
 ul
-    li Uniquely *ages* over time. Starts young and gradually grows older permanently when a player is nearby. Does not affect visual model or voice.
+    li Uniquely *ages* over time. Starts young and gradually grows older permanently when a player is in the same room or within 3m of the ghost.
     li Average Sanity Hunt starts at 75%. Decreases each time the ghost ages, stopping at 15%.
     li Hunting Speed increased by 60% at start. Decreases each time the ghost ages, stopping at 1/3 of the initial speed (slower than players).
     li Hunting Speed does not accelerate when in line of sight of a player, unlike most ghosts.
     li Interactions and Ghost Events happen very frequently at start. Decreases each time the ghost ages, stopping at 1/4 of the initial frequency.
-    li Only ages when a player is in the same room as the ghost.
     li Its response to asking its age on the Ouija Board will also change.
+    li Aging does not affect the ghost's form.
 ul.evidence
     +orb
     +writing
