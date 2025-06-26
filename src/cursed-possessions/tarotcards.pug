@@ -6,46 +6,48 @@ ul
     li Tarot cards can only be drawn while inside the investigation area.
 table
     tr
-        th Card
+        th Card & Burn Color
         th Chance
         th Effect
     tr
-        td The Tower
+        td(style={color: '#0080ee'}) The Tower
         td 20%
         td Causes an interaction and doubles ghost activity for 20 seconds.
     tr
-        td The Wheel of Fortune
+        td(style={'background-image': 'linear-gradient(to bottom right, #26ff26, #ff4714 80%)',
+            '-webkit-text-fill-color': 'transparent', '-webkit-background-clip': 'text'})
+            | The Wheel of Fortune
         td 20%
         td Either increases the player's sanity by 25% if it burns green or decreases it by 25% if it burns red.
     tr
-        td The Fool
+        td(style={color: '#df71ff'}) The Fool
         td 17%
         td Appears as another card at first, before turning into The Fool just before it burns. Has no effect.
     tr
-        td The Devil
+        td(style={color: '#f25277'}) The Devil
         td 10%
-        td Triggers a Ghost Event.
+        td Triggers a ghost event.
     tr
-        td Death
+        td(style={color: '#ae35ff'}) Death
         td 10%
         td Triggers a cursed hunt.
     tr
-        td The Hermit
+        td(style={color: '#53e1e6'}) The Hermit
         td 10%
         td Teleports the ghost back to its favourite room and traps it there for 1 minute.
     tr
-        td The Sun
+        td(style={color: '#ffd700'}) The Sun
         td 5%
         td Restores sanity to 100%.
     tr
-        td The Moon
+        td(style={color: 'white'}) The Moon
         td 5%
         td Drops sanity to 0%.
     tr
-        td The High Priestess
+        td(style={color: '#FCE883'}) The High Priestess
         td 2%
         td Revives a randomly chosen dead player at their corpse. If no one is dead, it will revive the next person who dies.
     tr
-        td The Hanged Man
+        td(style={color: 'lightgrey'}) The Hanged Man
         td 1%
         td Instantly kills the player.
