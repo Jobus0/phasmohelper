@@ -1,0 +1,19 @@
+include ../mixins/evidence.pug
+
+h3(wiki="https://phasmophobia.fandom.com/wiki/Obambo") Obambo
+    img(src="ghost-icons/obambo.png")
+ul
+    li Switches between a *calm* and *aggressive* state. Starts *calm*, switches 1 minute after a player first opens an exit door, then every 2 minutes.
+    li Interactions and Ghost Events happen more frequently when *calm*, and less frequently when *aggressive*.
+    li Sanity Hunt Threshold is 65% when *aggressive*, and 10% when *calm*.
+    li Hunting Speed is 15% faster when *aggressive*, and 15% slower when *calm*.
+    ul
+        li It can switch states mid-hunt, instantly changing its speed.
+    li Hunts started in the *aggressive* state have a 20% shorter duration.
+ul.evidence
+    +writing
+    +ultraviolet
+    +dots
+    +earlyhunt
+    +fast
+    +slow
