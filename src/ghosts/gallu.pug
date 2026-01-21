@@ -1,0 +1,21 @@
+include ../mixins/evidence.pug
+
+h3(wiki="https://phasmophobia.fandom.com/wiki/Gallu") Gallu
+    img(src="ghost-icons/gallu.png")
+ul
+    li Has three states: #[span.weakened *weakened*] → *normal* → #[span.enraged *enraged*].
+    li Starts in *normal* state, and cycles to the next state on certain triggers.
+    li Cycles #[span.weakened *weakened*] → *normal*, or *normal* → #[span.enraged *enraged*] when crucifix burnt, disoriented by incense during a hunt, or shortly after stepping in salt.
+    li Cycles to #[span.weakened *weakened*] if a hunt ends while #[span.enraged *enraged*].
+    li Sanity Hunt Threshold is #[span.weakened 40%] / 50% / #[span.enraged 60%].
+    li Hunting Speed is #[span.weakened 20% slower] / normal / #[span.enraged 15% faster].
+    li Hunt Initiation blocking range of crucifixes is #[span.weakened +1m] / normal / #[span.enraged -2m].
+    li Incense disorientation duration during hunt is #[span.weakened 20% longer] / normal / #[span.enraged 20% shorter].
+    li Cannot disturb salt while #[span.enraged *enraged*].
+ul.evidence
+    +emf
+    +ultraviolet
+    +box
+    +earlyhunt
+    +fast
+    +slow
