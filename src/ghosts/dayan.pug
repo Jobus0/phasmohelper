@@ -1,0 +1,23 @@
+include ../mixins/evidence.pug
+
+h3(wiki="https://phasmophobia.fandom.com/wiki/Dayan") Dayan
+    img(src="ghost-icons/dayan.png")
+ul
+    li Sanity Hunt Threshold varies based on player movement within 10 meters:
+    ul
+        li 65% if the player is moving.
+        li 45% if the player is still.
+        li 50% if no player is within 10 meters.
+    li When Hunting, if a player is within 10 meters, the ghost moves at a fixed speed based on player movement:
+    ul
+        li Hunting Speed increased by 30% if the player is moving.
+        li Hunting Speed decreased by 30% if the player is still.
+    li Line of sight speed acceleration accumulates in the background while within the 10-meter range, but only applies once the ghost is outside that range.
+    li Can only be female.
+ul.evidence
+    +emf
+    +orb
+    +box
+    +earlyhunt
+    +fast
+    +slow
