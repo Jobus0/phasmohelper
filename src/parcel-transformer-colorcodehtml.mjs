@@ -26,7 +26,7 @@ async function processHtml(html) {
         .replace(/\b(Sanity Loss)\b/g, '<span class="sanity-loss">$1</span>')
         .replace(/\b(Ghost Events?)\b/g, '<span class="ghost-events">$1</span>')
         .replace(/\b(When Hunting)\b/g, '<span class="when-hunting">$1</span>')
-        .replace(/\b(Average Sanity Hunt)\b/g, '<span class="average-sanity-hunt">$1</span>')
+        .replace(/\b(Sanity Hunt Threshold)\b/g, '<span class="sanity-hunt-threshold">$1</span>')
         .replace(/\b(Hunt Initiation)\b/g, '<span class="hunt-initiation">$1</span>')
         .replace(/\b(Hunting Speed)\b/g, '<span class="hunting-speed">$1</span>')
         .replace(/\b(Incense Hunt Prevention)\b/g, '<span class="incense-hunt-prevention">$1</span>')
