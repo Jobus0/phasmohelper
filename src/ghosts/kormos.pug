@@ -1,0 +1,19 @@
+include ../mixins/evidence.pug
+
+h3(wiki="https://phasmophobia.fandom.com/wiki/Kormos") Kormos
+    img(src="ghost-icons/kormos.png")
+ul
+    li Sanity Hunt Threshold increases to 70% if a player sprints in the same room as the ghost.
+    li When Hunting, it is entirely blind and cannot detect players visually, but hears footsteps.
+    ul
+        li If it hears players' footsteps on the same floor (Sprint: 30m, Walk: 15m, Crouch: 10m), it travels to the sound.
+        li Hunting Speed is 30% faster when traveling to a sound more than 5m away.
+        li If it detects player movement within 5m, Hunting Speed accelerates by up to 65%.
+    li When Hunting, it kills within 1.5m, ignoring walls and physical obstacles.
+    li Ghost Events will never be ghost mist or chasing type.
+ul.evidence
+    +box
+    +orb
+    +ultraviolet
+    +earlyhunt
+    +fast
