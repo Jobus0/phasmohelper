@@ -1,0 +1,19 @@
+include ../mixins/evidence.pug
+
+h3(wiki="https://phasmophobia.fandom.com/wiki/Deildegast") Deildegast
+    img(src="ghost-icons/deildegast.png")
+ul
+    li Interactions with doors and light switches are less frequent.
+    li Returns to its favourite room more frequently.
+    li When Hunting, it does not speed up from line-of-sight.
+    li Hunting Speed starts increased by ~75%, but decreases for every unique prop moved or touched by players outside of hunts (down to ~75% slower than standard speed).
+    ul
+        li Prop interactions by dead players outside of hunt also count towards slowing it down.
+        li Doors, equipment, and cursed possessions do not count.
+    li Hunting Speed resets back to maximum after each hunt ends or when a crucifix burns.
+ul.evidence
+    +emf
+    +writing
+    +dots
+    +fast
+    +slow
